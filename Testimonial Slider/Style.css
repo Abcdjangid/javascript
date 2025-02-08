@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dbd7f3;
+    user-select: none;
+}
+
+.terstimnial-container {
+    width: 500px;
+    height: 250px;
+    background-color: #6A5ACD;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px 10px;
+
+}
+
+
+img {
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+.text {
+    font-size: 15px;
+    font-family: cursive;
+    border-radius: 5px;
+}
+
+.username {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-weight: 100;
+}

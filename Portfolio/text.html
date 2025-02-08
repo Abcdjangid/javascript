@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Example</title>
+    <style>
+        /* Basic styles for sections */
+        section {
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            color: white;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <a href="#home" onclick="scrollToSection(event, 'home')">Home</a>
+        <a href="#about" onclick="scrollToSection(event, 'about')">About</a>
+        <a href="#works" onclick="scrollToSection(event, 'works')">Works</a>
+        <a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a>
+    </div>
+
+    <!-- Page Sections -->
+    <section id="home" style="background-color: #f4a261;">Home Section</section>
+    <section id="about" style="background-color: #2a9d8f;">About Section</section>
+    <section id="works" style="background-color: #264653;">Works Section</section>
+    <section id="contact" style="background-color: #e76f51;">Contact Section</section>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToSection(event, sectionId) {
+            event.preventDefault(); // Prevent the default anchor link behavior
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling effect
+            });
+        }
+    </script>
+
+</body>
+</html>

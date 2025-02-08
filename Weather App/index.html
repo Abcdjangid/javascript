@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input id="cityinput" type="text" placeholder="Enter City Name">
+            <button id="getweatherBtn">Search</button>
+        </div>
+        <!-- Display Error message -->
+        <div id="errorMessage" class="error_style"></div>
+
+        <p>Chance of Rain: <span id="rainChance"></span></p>
+        <img id="weatherIcon" src="Assets/Clear sky.png" alt="clear sky">
+        <div class="card">
+            <div class="card-body">
+                <img src="Assets/temperature.png" alt="temperature">
+                <h1>Temperature <span id="temperature"></span></h1>
+            </div>
+
+            <div class="card-body">
+                <img src="Assets/humidity.png" alt="humidity">
+                <h1>Humidity <span id="humidity"></span></h1>
+            </div>
+
+            <div class="card-body">
+                <img src="Assets/Wind speed.png" alt="wind speed">
+                <h1>Wind Speed <span id="windSpeed"></span></h1>
+            </div>
+        </div>
+        <footer>
+            <span>Made with ❤️ by <a href="https://instagram.com/abcdjangid" target="_blank">Abcdjangid</a></span>
+        </footer>
+    </div>
+    <script src="script_1.js"></script>
+</body>
+
+</html>
